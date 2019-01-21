@@ -9,8 +9,8 @@ BaselineOfPharo2VA >> baseline: spec [
 	<baseline>
 	spec
 		for: #common
-		do: [ spec package: #Pharo2VA.
+		do: [ spec package: #'Pharo2VA-Core'.
 			spec
 				group: 'default' with: #('core');
-				group: 'core' with: #('Pharo2VA') ]
+				group: 'core' with: #(''Pharo2VA-Core'') ]
 ]
