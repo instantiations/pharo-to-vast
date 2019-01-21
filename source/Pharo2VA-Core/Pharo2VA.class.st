@@ -21,6 +21,11 @@ Pharo2VA >> addToBlacklistAllExtensionsOf: aListOfClasses [
 	extendedClassesBlackList := aListOfClasses
 ]
 
+{ #category : #accessing }
+Pharo2VA >> classesBlackList [
+	^ classesBlackList
+]
+
 { #category : #'public export' }
 Pharo2VA >> classesBlackList: aListOfClasses [
 	classesBlackList := aListOfClasses
@@ -37,6 +42,11 @@ Pharo2VA >> convertCurlyBraces: aMCVersion [
 			aMethodDef
 				instVarNamed: 'source'
 				put: (BIConfigurableFormatter format: ast) ]
+]
+
+{ #category : #accessing }
+Pharo2VA >> directory [
+	^ directory
 ]
 
 { #category : #accessing }
@@ -111,6 +121,11 @@ Pharo2VA >> exportPackageNamed: aPackageName on: aDirectory [
 ]
 
 { #category : #accessing }
+Pharo2VA >> extendedClassesBlackList [
+	^ extendedClassesBlackList
+]
+
+{ #category : #accessing }
 Pharo2VA >> filenames [
 	^ packagesNames collect: [ :each | directory / each , '.mcz' ]
 
@@ -123,6 +138,11 @@ Pharo2VA >> initialize [
 	methodsBlacklist := #().
 	extendedClassesBlackList := #().
 	classesBlackList := #()
+]
+
+{ #category : #accessing }
+Pharo2VA >> methodsBlacklist [
+	^ methodsBlacklist
 ]
 
 { #category : #accessing }
