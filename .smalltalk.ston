@@ -1,7 +1,7 @@
 SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
-      #baseline : 'pharo2va',
+      #baseline : 'Pharo2VA',
       #directory : 'source',
       #load : [ 'Development' ],
       #platforms : [  #pharo ]
@@ -9,7 +9,7 @@ SmalltalkCISpec {
   ],
   #testing : {
     #coverage : {
-       #packages : [ 'pharo2va*' ]
+       #packages : [ 'Pharo2VA*' ]
     }
   }
 }
