@@ -33,7 +33,7 @@ Pharo2VA >> convertCurlyBraces: aMCVersion [
 		do: [ :aMethodDef | 
 			| ast |
 			ast := RBParser parseMethod: aMethodDef source.
-			Pharo2VWCurlyBracesConvertor new visitNode: ast.
+			Pharo2VACurlyBracesConvertor new visitNode: ast.
 			aMethodDef
 				instVarNamed: 'source'
 				put: (BIConfigurableFormatter format: ast) ]
