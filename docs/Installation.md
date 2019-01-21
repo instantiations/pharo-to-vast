@@ -1,5 +1,9 @@
 # Installation
 
+## Prerequisites
+
+Tested with Pharo 7 and VA Smalltalk 9.1, but should likely work with older versions. 
+
 ## Basic Installation
 
 You can load **Pharo2VA** evaluating:
