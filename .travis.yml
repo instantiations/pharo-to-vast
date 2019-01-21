@@ -19,6 +19,8 @@ deploy:
   provider: releases
   api_key:
     secure: uEhyqGJYs/cbJXRnvrys0UT0ZC82m5jx+gSwreOkHcT5AmJ9p7NIr53SoNN2qT+4HPcp181Xp15WiSyxkjFjrqpDJjsA3sXSAZV3lj33JnRwIsFl95MLmsLvS0vE2qyVsDDeZEKr3dwfLySVc22MR4toQTy88DIWk0Fz5aLHH1/KElef8eAC8YYzM7wZAK1gmvrC/GQaiohzSWr2/rmSxmPh8qOnNK80OvsuOlTi4vUiXPcir636oGVP65P934VQ9vvaGVCGPXUxwtcSXAU3JkI4wjXVzaDt05ErKYAfuNE41HHJOGjWSUgRPufx4ShcbY7otK5z4Sw/+gGrfCUTZR5RNjUuHpKxwSaoM6T85CdaKd88cVTpAyIEsoiFWWUIN0K5bdIt4Aa3aGUty539YsCkt/MmIyAqNbYiPF+0qIh4feiIgPkdZl8REn29MVpyEOhwuqtv5jnL5vw4IbK6WOdCkLo/GG7rT9BSy9yXD60eSpzEIyf03EFjwfWLREMZCmiFJg2N9QMWV/GHsCwz3+Hc+3DRcLdBL7rXTqwC7BHOy3n17Gg5qDdNCcpcsF4QOn1zRoUthiahciQ+fUWxXybJQzKUqtjCHIw23vgonfWiTSoHP4tEX7OdSrtJq6QDynHfGd+5Fe6aeedsLQuBJWLcn0WQc3xNb15Q1QlwtP8=
-  file: ''
+  file: "${TRAVIS_BRANCH}-${TRAVIS_SMALLTALK_VERSION}.zip"
+  skip_cleanup: true
   on:
     repo: vasmalltalk/pharo2va
+tags: true
