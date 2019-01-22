@@ -29,18 +29,19 @@ By default, the exporter will also take care of re-write the Pharo's literal Arr
 - The documentation is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/).
 
 
+## Quick Start
+
+- Download the latest [Pharo 32](https://get.pharo.org/) or [64 bits VM](https://get.pharo.org/64/) and follow this [instructions](docs/Installation.md).
+- Download a ready to use image from the [release page](https://github.com/vasmalltalk/pharo2va/releases/latest)
+- Explore the [documentation](docs/)
+
 
 ## Installation
 
 To load the project in a Pharo image, or declare it as a dependency of your own project follow this [instructions](docs/Installation.md).
 
 
-## Quick Start
-
-- Download the latest [Pharo 32](https://get.pharo.org/) or [64 bits VM](https://get.pharo.org/64/) and follow [installation instructions](docs/Installation.md)
-- Explore the [documentation](docs/)
-
-### Exporting Example
+## Example
 
 Below is an example when porting STON to VA:
 
@@ -76,11 +77,11 @@ Before evaluating above code, be sure to have those packages `'STON-Core'` and `
 
 Evaluating that code will end up creating one .mcz file (Monticello file) per exported packaged (`#packagesNames:`), under the specified directory (`#directory:`). As you can see, there are ways to exclude methods (`#methodsBlacklist:`), extension methods from classes (`#addToBlacklistAllExtensionsOf`), and even full classes (`#classesBlackList:`).
 
-### Converting literal arrays
+## Converting literal arrays
 
 VA Smalltalk do not have the same array notation for `{}` as Pharo has. But do not worry this exporter export this `{'A'}` in this order `(Array new: 1) at: 1 put: 'A'`.
 
-### Importing on VA
+## Importing on VA
 
 To import in VA, you can use the [Monticello Importer](https://www.instantiations.com/docs/91/wwhelp/wwhimpl/js/html/wwhelp.htm#href=sg/stugmi.html) feature.
 
@@ -89,8 +90,9 @@ Right now the tool always exports the packages into .mcz and so you must use Mon
 
 ## Acknowledgments
 
-Pharo2VA was influenced by a subset of the [Pharo2VW](https://github.com/ObjectProfile/Pharo2VW) project. There are parts which we even copied and adapted them like the AST literal Array converter . Other parts, we took them as inspiration.
-
+- Pharo2VA was influenced by a subset of the [Pharo2VW](https://github.com/ObjectProfile/Pharo2VW) project. There are parts which we even copied and adapted them like the AST literal Array converter . Other parts, we took them as inspiration.
+- Github repository layout was generated with [Ba-St Github-setup project](https://github.com/ba-st/GitHub-setup).
+- Thanks [Gabriel Cotelli](https://github.com/gcotelli) for the help on setting up Travis CI and Coveralls integration. 
 
 ## Contributing
 
