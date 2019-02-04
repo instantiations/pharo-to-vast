@@ -15,6 +15,7 @@
 
 [![GitHub release](https://img.shields.io/github/release/vasmalltalk/pharo2va.svg)](https://github.com/vasmalltalk/pharo2va/releases/latest)
 [![Build Status](https://travis-ci.com/vasmalltalk/pharo2va.svg?branch=master)](https://travis-ci.com/vasmalltalk/pharo2va)
+[![Build Status Windows](https://ci.appveyor.com/api/projects/status/6j1e0dalvb7b5mrn/branch/master?svg=true)](https://ci.appveyor.com/project/marianopeck/pharo2va)
 [![Coverage Status](https://coveralls.io/repos/github/vasmalltalk/pharo2va/badge.svg?branch=master)](https://coveralls.io/github/vasmalltalk/pharo2va?branch=master)
 
 Little tool to ease exporting code from Pharo to VA Smalltalk
@@ -92,7 +93,7 @@ Right now the tool always exports the packages into .mcz and so you must use Mon
 
 - Pharo2VA was influenced by a subset of the [Pharo2VW](https://github.com/ObjectProfile/Pharo2VW) project. There are parts which we even copied and adapted them like the AST literal Array converter . Other parts, we took them as inspiration.
 - Github repository layout was generated with [Ba-St Github-setup project](https://github.com/ba-st/GitHub-setup).
-- Thanks [Gabriel Cotelli](https://github.com/gcotelli) for the help on setting up Travis CI and Coveralls integration. 
+- Thanks [Gabriel Cotelli](https://github.com/gcotelli) for the help on setting up Travis CI and Coveralls integration.
 
 ## Contributing
 
