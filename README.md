@@ -2,7 +2,7 @@
  <!-- <img src="assets/logos/128x128.png">  -->
  <h1 align="center">Pharo2VA</h1>
   <p align="center">
-    Facilitating code export from Pharo to VA Smalltalk
+    Facilitating code export from Pharo to VASmalltalk
     <br>
     <a href="docs/"><strong>Explore the docs »</strong></a>
     <br>
