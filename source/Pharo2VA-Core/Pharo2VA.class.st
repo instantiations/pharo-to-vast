@@ -1,3 +1,6 @@
+"
+Pharo2VA is a class for easing porting code from Pharo to VA
+"
 Class {
 	#name : #Pharo2VA,
 	#superclass : #Object,
